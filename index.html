@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nation Game – 45-Day Roadmap</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 60px 20px 40px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 20px 80px;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: var(--muted);
+      max-width: 750px;
+    }
+
+    .roadmap {
+      margin-top: 30px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 1.2rem;
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .card li {
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--accent);
+      font-size: 0.85rem;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nation Game</h1>
+    <p>45-Day Product Development Roadmap</p>
+    <span class="badge">Immersive Gameplay · Learning Simulation</span>
+  </header>
+
+  <div class="container">
+
+    <section class="section">
+      <h2>Roadmap Objective</h2>
+      <p>
+        The goal of this 45-day roadmap is to design, build, and validate a
+        fully playable immersive learning simulation. The focus is on creating
+        real gameplay systems, believable AI-driven NPC interactions, and a
+        cohesive user experience that demonstrates how learning emerges through
+        interaction inside a living game world.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>45-Day Execution Plan</h2>
+
+      <div class="roadmap">
+
+        <div class="card">
+          <h3>Days 1–10 · Core Gameplay Foundation</h3>
+          <ul>
+            <li>Finalize core gameplay loop (movement, interaction, survival mechanics)</li>
+            <li>Implement A1-level language interaction rules</li>
+            <li>Design NPC behavior logic (intent, mood, memory)</li>
+            <li>Collaborate with subject-matter experts (SMEs) to validate learning realism</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Days 11–25 · Immersion & Interaction</h3>
+          <ul>
+            <li>Develop multiple in-game scenarios (café, market, street)</li>
+            <li>Integrate small LLM-driven NPC dialogue system</li>
+            <li>Improve visual feedback, animations, and environmental cues</li>
+            <li>Iterate gameplay based on internal testing and SME feedback</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Days 26–35 · Experience Polish</h3>
+          <ul>
+            <li>Enhance UI clarity and in-world feedback systems</li>
+            <li>Optimize NPC conversation flow and adaptation logic</li>
+            <li>Create 2D → 3D transition and introduction video</li>
+            <li>Stabilize build for consistent demo experience</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Days 36–45 · Validation & Demo Readiness</h3>
+          <ul>
+            <li>Playtest with early users and collect qualitative feedback</li>
+            <li>Measure engagement and session duration</li>
+            <li>Document technical and learning insights</li>
+            <li>Prepare live demo and public-facing materials</li>
+            <li>Launch</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 Nation Game · Immersive Learning Through Gameplay
+  </footer>
+
+</body>
+</html>
